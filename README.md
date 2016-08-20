@@ -40,23 +40,27 @@ The overall goal of this assignment is to explore the National Emissions Invento
 
 You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
 
-1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the **base** plotting system, make a plot showing the *total* PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+<ol>
+<li> Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the **base** plotting system, make a plot showing the *total* PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
 **[ANS]**
 The total PM2.5 emissions from all sources in the United States exhibits a general decreasing trend from 1999 to 2008.
-
+</li>
+<li>
 2. Have total emissions from PM2.5 decreased in the **Baltimore City**, Maryland (**fips == "24510"**) from 1999 to 2008? Use the **base** plotting system to make a plot answering this question.
 
 **[ANS]**
 There is a general decrease in total PM2.5 emissions in Baltimore City, MD, with a spike in 2005 although this does not exceed the maximum observed in 1999.
-
+</li>
+<li>
 3. Of the four types of sources indicated by the **type** (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for **Baltimore City**? Which have seen increases in emissions from 1999–2008? Use the **ggplot2** plotting system to make a plot answer this question.
 
 **[ANS]**
 All types except "Point" exhibit a general decrease in emissions from 1999 to 2008 for Baltimore City, somewhat plateauing between 2002 and 2005.
 Type "Point" is the only source showing an increase from 1999 to 2005.
 However this trend decreases quite drastically in 2008 almost down to the lowest emissions recorded in 1999.
-
+</li>
+<li>
 4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
 **[ANS]**
@@ -64,19 +68,23 @@ Coal combustion=related sources are Point and Non-Point.
 The general trend shows a decrease for both types between 1999 and 2008. 
 Upon closer inspection, the plateau observed for both sources between 2002 and 2005 exhibit a very slight increase for the Point source.
 This is also reflected in the sum total emissions for both sources.
-
+</li>
+<li>
 5. How have emissions from motor vehicle sources changed from 1999–2008 in **Baltimore City**?
 
 **[ANS]**
 This is based on the assumption that "motor vehicle" source is of type "On Road".
 Motor vehicle emissions in Baltimore City have generally decreased from 1999 to 2008, the most significant being from 1999 to 2002.
-
+</li>
+<li>
 6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in **Los Angeles County**, California (**fips == "06037"**). Which city has seen greater changes over time in motor vehicle emissions?
 
 **[ANS]**
 This is based on the assumption that "motor vehicle" source is of type "On Road".
 Baltimore City and Los Angeles County have seen changes in opposite directions; Baltimore City having decreased and Los Angeles County increased between 1999 and 2008.
 However, Baltimore City has seen a greater magnitude of change between the two locations for that time period.
+</li>
+</ol>
 
 # Making and Submitting Plots
 
